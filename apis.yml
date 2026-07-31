@@ -1,8 +1,30 @@
 aid: nilus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nilus.png
 name: Nilus
-description: 'Nilus is a company surfaced as a portfolio company of bessemer-venture-partners, felicis
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Nilus is an AI-powered treasury management platform ("your agentic workforce for
+  treasury") that gives finance teams real-time cash visibility across banks, entities
+  and currencies. Its modular platform pairs pre-built AI agents with connectivity to
+  20,000+ banks and payment service providers (via SWIFT, host-to-host and API) and
+  major ERPs (SAP, Oracle, NetSuite, Dynamics 365) to automate reconciliation,
+  cash-flow forecasting, payment workflows, FX exposure tracking, debt-covenant
+  monitoring and idle-cash investment. Founded in 2021 by Daniel Kalish (ex-PayPal)
+  and Danielle Shaul (ex-Fundbox), Nilus is based in New York with a Tel Aviv presence,
+  is backed by Bessemer Venture Partners, Felicis and Vesey Ventures, and serves
+  customers including Alloy, Taboola, Made In Cookware and Planned Parenthood. Nilus
+  operates as a closed B2B SaaS and does not currently publish a public developer API,
+  OpenAPI contract or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/nilus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Treasury
+- Cash Management
+- Payments
+- Reconciliation
+- Financial Operations
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nilus-domain-security.yml
 - type: Website
   url: https://www.nilus.com/
+- type: Blog
+  url: https://www.nilus.com/blog/
+- type: SignUp
+  url: https://www.nilus.com/get-started
+- type: Login
+  url: https://app.nilus.com
+- type: TermsOfService
+  url: https://www.nilus.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.nilus.com/privacy-policy
+- type: Compliance
+  url: https://www.nilus.com/
+- type: Conformance
+  url: conformance/nilus-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
